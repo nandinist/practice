@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <!-- See how I am sending your file and updating it in github
+    *  1 - I will take Add.html as example
+    *  2 - Click on "+" sign next to file, it will go to staged changes section
+    *  3 - Write a message in the box above, this is called a commit message
+    *  4 - Now click control + Enter to commit this messagewhile your cursor is in the message box.
+    *  5 - You should always save your file before commiting.
+    *  6 - Now this file Add.html is commited in your local machine. Next step is to PUSH it on Github.
+    -->
+        <input type="text" value="" id="num1">
+        
+        <input type="text" value="" id="num2">
+        <br>
+        <br>
+        <input type="button" value="ADD" id="button" onclick="return sumAdd()">
+        <br>
+        <br>
+        <div id="sum">Sum:</div>    <span id="res"></span>
+    <script>
+        function sumAdd() {
+             var x = parseInt(document.getElementById('num1').value);
+             var y = parseInt(document.getElementById('num2').value);
+             document.getElementById('res').innerHTML = x+Sy;
+        }
+       
+    </script>
+    <style>
+        body{
+            background: plum;
+            padding-top: 100px;
+            padding-left: 535px;
+        }
+        #num1{
+            height: 50px;
+            width: 150px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            padding-left: 7px;
+        }
+        #num2{
+            height: 50px;
+            width: 150px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            padding-left: 7px;
+        }
+        #button{
+            height: 30px;
+            width: 100px;
+            text-decoration-color:rgb(15, 15, 15);
+            background-color:pink;
+            font-style: inherit;
+        }
+        #sum{
+            font-style: bold;
+        }
+    </style>
+</body>
+</html>
