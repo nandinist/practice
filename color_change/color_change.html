@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="color_change.css" rel='stylesheet'>
+    <script src="color_change.js"></script>
+</head>
+<body>
+    <div class="container_">
+        <button id="button">Change Colour</button>
+    </div>
+    <script>
+        const button = document.querySelector('button')
+const body = document.querySelector('body')
+const colors = ['red', 'green', 'blue', 'yellow', 'pink', 'purple']
+
+body.style.backgroundColor = 'cyan'
+button.addEventListener('click', changeBackground)
+
+function changeBackground(){
+const colorIndex= parseInt(Math.random()*colors.length)
+body.style.backgroundColor = colors[colorIndex]
+}
+    </script>
+</body>
+</html>
